@@ -1,0 +1,249 @@
+@font-face {
+    font-family: "Roboto";
+/* src: url(./Police/roboto_medium_macroman/Roboto-Medium-webfont.woff);*/
+    src: url(./Police/roboto_thin_macroman/Roboto-Thin-webfont.woff);
+    /*src: url(./Police/roboto_bold_macroman/Roboto-Bold-webfont.woff);*/
+} 
+
+
+
+@font-face {
+    font-family: "shrikhand";
+    src: url(./Police/shrikhand/Shrikhand-Regular.otf);
+}
+
+body
+{
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+}
+
+
+
+
+    #header
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1em;
+        
+    }
+
+    #nav
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        width: 100%;
+        height: 100px;
+        
+    }
+
+    .logo
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        box-shadow: 0px -11px 13px 8px;
+
+    }
+    
+    .logo img 
+    {
+     width: 50%; 
+     height: 30px;
+    }
+
+    .search_bar
+    {   
+        height: 45px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(234, 234, 234);;
+        
+    }
+    .search_bar i 
+    {
+        padding-inline: 10px;
+    }
+    #search
+    {
+        border: none;
+        background-color:rgb(234, 234, 234);
+           
+    }
+    #search::placeholder
+    {
+        color: black;
+        font-weight: bolder ; 
+        font-size: 1.1em;
+        padding-inline: 10px
+    }
+
+    .first_title_card
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 250px;
+        background-color: rgb(246, 246, 246);
+        text-align: center;
+        
+    }
+
+    h1 
+    {   
+        font-weight:bold;
+        font-size: 1.6em;
+        width: 70%; 
+        
+    }
+
+    .first_title_card p 
+    {
+        font-weight: 100;
+        font-size: 1em;
+        width: 80%;
+    }
+    .btn
+    {
+       width: 60%; 
+       
+    }
+
+    .btn button 
+    {
+        height: 50px;
+        width: 100%;
+        padding: 0;
+        border: none;
+        border-radius: 30px;
+        background: linear-gradient(120deg,  #FF79DA 30%, #9356DC ); 
+        color: white;
+        
+    }
+
+    #section_fct
+    {
+        height: 300px;
+        width: 100%;
+    }
+     
+    h2 
+    {
+        margin-inline: 10px;
+    }
+
+    .div_card
+    {
+        display: flex;
+        flex-direction: column ;
+        justify-content: space-between;
+        align-items: center;
+        height: 200px;
+        
+    }
+
+    .card
+    {
+        border: 1px solid black;
+        border-radius: 15px 15px 15px 15px;
+        width: 80%;
+       background-color: rgb(246, 246, 246);         
+    }
+
+    .card p
+    {
+        text-align: justify;
+        padding-left: 20px;
+    }
+     
+    .card p i 
+    {
+        padding-right: 15px;
+        color: rgba(126,126,126);
+    }
+
+    .card span 
+    {
+        position: relative;
+        right: 35px;
+        top: 2px;
+        border: 1px solid black;
+        border-radius: 80px;
+        padding-inline: 9px;
+        padding-block: 5px;
+        background-color: #9356DC;
+        color: white;
+    }
+
+    .restaurants_section
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(246, 246, 246);
+        height: auto;
+
+    }
+
+    h2 
+    {
+        align-items: unset;
+    }
+        
+    
+    .restaurants_card
+    {
+        height: 300px;
+        width: 90%;
+        border: 1px solid white;
+        border-radius: 20px;
+    }  
+
+   
+    .restaurants_card img 
+    {
+        height: 230px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .restaurant_txtdiv
+    {
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+    
+    .restaurant_txtdiv h3 
+    {
+        margin: 0;
+    }
+    .restaurant_txtdiv p
+    {
+        margin: 0;
+        width: 50%;
+    }
+    .restaurant_txtdiv span 
+    {
+       display: flex;
+    }
+    
+    
+
+
+
+    
