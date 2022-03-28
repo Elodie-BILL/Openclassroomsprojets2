@@ -16,51 +16,50 @@ body
 {
     font-family: "Roboto", sans-serif;
     box-sizing: border-box;
-    margin: 0;
-    width: 100%;
+    margin-top: 0;
+    width: 30%;
+    margin-inline: 35%;
 }
 
 
-
-
-    #header
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-size: 1em;
+#header
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1em;
         
-    }
+}
 
-    #nav
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content:space-between;
-        width: 100%;
-        height: 100px;
+#nav {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    width: 100%;
+    weight: 100px;
         
-    }
+}
 
-    .logo
-    {
+.logo
+{
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
         height: 50px;
         background-color: white;
-        box-shadow: 0px -11px 13px 8px;
+        box-shadow: grey 0px -11px 13px 8px;
+}
 
-    }
+   
     
-    .logo img 
+.logo img 
     {
      width: 50%; 
      height: 30px;
     }
 
-    .search_bar
+.search_bar
     {   
         height: 45px;
         width: 100%;
@@ -68,19 +67,21 @@ body
         justify-content: center;
         align-items: center;
         background-color: rgb(234, 234, 234);;
-        
-    }
-    .search_bar i 
+    } 
+
+.search_bar i 
     {
         padding-inline: 10px;
     }
-    #search
+
+#search
     {
         border: none;
         background-color:rgb(234, 234, 234);
            
     }
-    #search::placeholder
+
+#search::placeholder
     {
         color: black;
         font-weight: bolder ; 
@@ -88,7 +89,7 @@ body
         padding-inline: 10px
     }
 
-    .first_title_card
+.first_title_card
     {
         display: flex;
         flex-direction: column;
@@ -101,7 +102,7 @@ body
         
     }
 
-    h1 
+h1 
     {   
         font-weight:bold;
         font-size: 1.6em;
@@ -109,19 +110,20 @@ body
         
     }
 
-    .first_title_card p 
+.first_title_card p 
     {
         font-weight: 100;
         font-size: 1em;
         width: 80%;
     }
-    .btn
+
+.btn
     {
        width: 60%; 
        
     }
 
-    .btn button 
+.btn button 
     {
         height: 50px;
         width: 100%;
@@ -133,18 +135,18 @@ body
         
     }
 
-    #section_fct
+#section_fct
     {
         height: 300px;
         width: 100%;
     }
      
-    h2 
+h2 
     {
         margin-inline: 10px;
     }
 
-    .div_card
+.div_card
     {
         display: flex;
         flex-direction: column ;
@@ -154,7 +156,7 @@ body
         
     }
 
-    .card
+.card
     {
         border: 1px solid black;
         border-radius: 15px 15px 15px 15px;
@@ -162,19 +164,19 @@ body
        background-color: rgb(246, 246, 246);         
     }
 
-    .card p
+.card p
     {
         text-align: justify;
         padding-left: 20px;
     }
      
-    .card p i 
+.card p i 
     {
         padding-right: 15px;
         color: rgba(126,126,126);
     }
 
-    .card span 
+.card span 
     {
         position: relative;
         right: 35px;
@@ -187,7 +189,7 @@ body
         color: white;
     }
 
-    .restaurants_section
+.restaurants_section
     {
         display: flex;
         flex-direction: column;
@@ -197,50 +199,70 @@ body
 
     }
 
-    h2 
+h2 
     {
         align-items: unset;
     }
         
     
-    .restaurants_card
-    {
+.restaurants_card
+{
         height: 300px;
         width: 90%;
-        border: 1px solid white;
-        border-radius: 20px;
-    }  
+     border: 1px solid white;
+    border-radius: 20px;
+}  
 
    
-    .restaurants_card img 
-    {
-        height: 230px;
-        width: 100%;
-        object-fit: cover;
-    }
+.restaurants_card img 
+{
+    height: 230px;
+    width: 100%;
+    object-fit: cover;
+   }
 
-    .restaurant_txtdiv
-    {
-        height: 90px;
-        display: flex;
-        flex-direction: column;
+.restaurant_txtdiv
+{
+    height: 90px;
+    display: flex;
+    flex-direction: column;
         
 
-    }
+}
     
-    .restaurant_txtdiv h3 
-    {
-        margin: 0;
-    }
-    .restaurant_txtdiv p
-    {
-        margin: 0;
-        width: 50%;
-    }
-    .restaurant_txtdiv span 
-    {
-       display: flex;
-    }
+.restaurant_txtdiv h3 
+{
+    margin: 0;
+}
+
+.restaurant_txtdiv p
+{
+    margin: 0;
+    width: 50%;
+}
+
+.restaurant_txtdiv span 
+{
+     
+    display: flex;
+}
+
+    
+#footer
+{
+    background: color #535353;
+    /* color: #FFFFFF;  */
+} 
+
+
+
+
+
+
+  
+
+
+
     
     
 
