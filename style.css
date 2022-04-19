@@ -1,11 +1,18 @@
 @font-face {
     font-family: "Roboto";
-/* src: url(./Police/roboto_medium_macroman/Roboto-Medium-webfont.woff);*/
     src: url(./Police/roboto_thin_macroman/Roboto-Thin-webfont.woff);
-    /*src: url(./Police/roboto_bold_macroman/Roboto-Bold-webfont.woff);*/
+
 } 
 
+@font-face {
+    font-family: "robotomedium" ;
+   src: url(./Police/roboto_medium_macroman/Roboto-Medium-webfont.woff);
+}
 
+@font-face {
+    font-family: "robotobold";
+    src: url(./Police/roboto_bold_macroman/Roboto-Bold-webfont.woff);
+}
 
 @font-face {
     font-family: "shrikhand";
@@ -31,185 +38,185 @@ body
         
 }
 
-#nav {
+#nav 
+{
     display: flex;
     flex-direction: column;
     justify-content:space-between;
     width: 100%;
-    weight: 100px;
+    height: 100px;
         
 }
 
 .logo
 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 50px;
-        background-color: white;
-        box-shadow: grey 0px -11px 13px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    box-shadow: grey 0px -11px 13px 8px;
 }
 
    
     
 .logo img 
-    {
-     width: 50%; 
-     height: 30px;
-    }
+{
+    width: 50%; 
+    height: 30px;
+}
 
 .search_bar
-    {   
-        height: 45px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(234, 234, 234);;
-    } 
+{   
+    height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(234, 234, 234);;
+} 
 
 .search_bar i 
-    {
-        padding-inline: 10px;
-    }
+{
+    padding-inline: 10px;
+}
 
 #search
-    {
-        border: none;
-        background-color:rgb(234, 234, 234);
+{
+    border: none;
+    background-color:rgb(234, 234, 234);
            
-    }
+}
 
 #search::placeholder
-    {
-        color: black;
-        font-weight: bolder ; 
-        font-size: 1.1em;
-        padding-inline: 10px
-    }
+{
+    color: black;
+    font-weight: bolder ; 
+    font-size: 1.1em;
+    padding-inline: 10px
+}
 
 .first_title_card
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 250px;
-        background-color: rgb(246, 246, 246);
-        text-align: center;
-        
-    }
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    background-color: rgb(246, 246, 246);
+    text-align: center;
+    font-family: "robotobold";
+}
 
 h1 
-    {   
-        font-weight:bold;
-        font-size: 1.6em;
-        width: 70%; 
+{   
+    font-weight:bold;
+    font-size: 1.6em;
+    width: 70%; 
         
-    }
+}
 
 .first_title_card p 
-    {
-        font-weight: 100;
-        font-size: 1em;
-        width: 80%;
-    }
+{
+    font-weight: 100;
+    font-size: 1em;
+    width: 80%;
+}
 
 .btn
-    {
-       width: 60%; 
+{
+     width: 60%; 
        
-    }
+}
 
 .btn button 
-    {
-        height: 50px;
-        width: 100%;
-        padding: 0;
-        border: none;
-        border-radius: 30px;
-        background: linear-gradient(120deg,  #FF79DA 30%, #9356DC ); 
-        color: white;
+{
+    height: 50px;
+    width: 100%;
+    padding: 0;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(120deg,  #FF79DA 30%, #9356DC ); 
+    color: white;
         
-    }
+}
 
 #section_fct
-    {
-        height: 300px;
-        width: 100%;
-    }
+{
+    height: 300px;
+    width: 100%;
+}
      
 h2 
-    {
-        margin-inline: 10px;
-    }
+{
+    margin-inline: 10px;
+}
 
 .div_card
-    {
-        display: flex;
-        flex-direction: column ;
-        justify-content: space-between;
-        align-items: center;
-        height: 200px;
+{
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
         
-    }
+}
 
 .card
-    {
-        border: 1px solid black;
-        border-radius: 15px 15px 15px 15px;
-        width: 80%;
-       background-color: rgb(246, 246, 246);         
-    }
+{
+    border: 1px solid black;
+    border-radius: 15px 15px 15px 15px;
+    width: 80%;
+    background-color: rgb(246, 246, 246);         
+}
 
 .card p
-    {
-        text-align: justify;
-        padding-left: 20px;
-    }
+{
+    text-align: justify;
+    padding-left: 20px;
+}
      
 .card p i 
-    {
-        padding-right: 15px;
-        color: rgba(126,126,126);
-    }
+{
+    padding-right: 15px;
+    color: rgba(126,126,126);
+}
 
 .card span 
-    {
-        position: relative;
-        right: 35px;
-        top: 2px;
-        border: 1px solid black;
-        border-radius: 80px;
-        padding-inline: 9px;
-        padding-block: 5px;
-        background-color: #9356DC;
-        color: white;
-    }
+{
+    position: relative;
+    right: 35px;
+    top: 2px;
+    border: 1px solid black;
+    border-radius: 80px;
+    padding-inline: 9px;
+    padding-block: 5px;
+    background-color: #9356DC;
+    color: white;
+}
 
 .restaurants_section
-    {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: rgb(246, 246, 246);
-        height: auto;
-
-    }
+{
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+    background-color: rgb(246, 246, 246);
+    height: auto;
+}
 
 h2 
-    {
-        align-items: unset;
-    }
+{
+    align-items: unset;
+}
         
     
 .restaurants_card
 {
-        height: 300px;
-        width: 90%;
-     border: 1px solid white;
+    height: 300px;
+    width: 90%;
+    border: 1px solid white;
     border-radius: 20px;
 }  
 
@@ -219,7 +226,7 @@ h2
     height: 230px;
     width: 100%;
     object-fit: cover;
-   }
+}
 
 .restaurant_txtdiv
 {
@@ -243,16 +250,37 @@ h2
 
 .restaurant_txtdiv span 
 {
-     
     display: flex;
 }
 
     
 #footer
 {
-    background: color #535353;
-    /* color: #FFFFFF;  */
-} 
+    height: 150px;
+    background-color: #5353539c;
+    color: #FFFFFF;
+    padding: 20px;
+    
+}
+
+#footer i 
+{
+    padding-inline: 10px;
+}
+
+#footer p
+{
+    line-height: 2;
+
+}
+
+.span_footer
+{
+    font-family: "shrikhand";
+}
+
+
+
 
 
 
