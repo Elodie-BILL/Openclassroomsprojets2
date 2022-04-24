@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(./Police/roboto_thin_macroman/Roboto-Thin-webfont.woff);
+
+} 
+
+@font-face {
+    font-family: "robotomedium" ;
+   src: url(./Police/roboto_medium_macroman/Roboto-Medium-webfont.woff);
+}
+
+@font-face {
+    font-family: "robotobold";
+    src: url(./Police/roboto_bold_macroman/Roboto-Bold-webfont.woff);
+}
+
+@font-face {
+    font-family: "shrikhand";
+    src: url(./Police/shrikhand/Shrikhand-Regular.otf);
+}
+
+
+body
+{
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#header
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+        
+}
+
+.logo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+}
+
+#main
+{
+   
+    margin:  0px 5px;
+    width: 100%;
+    background-color:#f6f6f6;
+   
+}
+
+.french_img_div
+{
+   
+    background-image: url(./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 661px;
+    display: flex;
+    align-items: flex-end;
+   
+
+    
+}
+
+.french-contain--icon
+{
+  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "shrikhand";
+    font-size: 35px;
+    background-color: #f6f6f6;
+    width: 100%;
+    border-radius: 80px 80px 0 0;
+    padding-inline: 50px;
+}
+
+
+
+ 
+.french-contain--icon i
+{
+    font-size: 60px;
+}
+
+/* .french_img_div img 
+{
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}*/
+
+.french-contain-card
+{
+    margin: 0 20px;
+   
+}
+.french-meal
+{
+    border-radius: 15px;
+    margin-block: 20px;
+    padding: 5px 10px;
+    background-color: #FFFFFF;
+    height: 80px ;
+}
+#footer
+{
+    height: 200px;
+    background-color: #353535;
+    color: #FFFFFF;
+    padding: 20px;
+    padding-bottom: 20px;
+   
+}
+
+#footer i 
+{
+    padding-inline: 10px;
+}
+
+#footer p
+{
+    line-height: 2;
+
+}
+
+.span_footer
+{
+    font-family: "shrikhand";
+}
