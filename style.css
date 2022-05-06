@@ -175,6 +175,7 @@ h2
 .fct-section--card:hover
 {
   background-color: #f5edff;
+  
     
 }  
 
@@ -201,7 +202,7 @@ h2
 }
 
 
-.fct-section--card .fa-solid:hover{
+.fct-section--card:hover .fa-solid{
     color: #9356DC;
 } 
 
@@ -339,7 +340,12 @@ h3
 }
 
 
+/* MEDIA QUERIES */
 
+@media screen and (max-width:768px)
+{
+
+}
 
 
 
