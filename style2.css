@@ -2,7 +2,7 @@
     font-family: "Roboto";
     src: url(./Police/roboto_thin_macroman/Roboto-Thin-webfont.woff);
 
-} 
+}
 
 @font-face {
     font-family: "robotomedium" ;
@@ -31,7 +31,7 @@
         opacity: .5;
     } */
 
-   100%{ 
+   100%{
        transform: translateY(0);
        opacity: 1;
     }
@@ -41,14 +41,22 @@
 @keyframes swipRight{
     0%{
         transform: translateX(0);
+    }
 
-        
+    25%{
+        transform:translateX(-5%);
+    }
+
+    50%{
+        transform:translateX(5%)
+
+    }
+    75%{
+        transform:translateX(-5%);
     }
 
     100%{
-        transform: translateX(-20%);
-
-       
+        transform: translateX(0%);
     }
 }
 
@@ -56,18 +64,35 @@
 {
     from{
         transform: rotate( 0deg);
+        
     }
 
     to{
-        transform: rotate(360deg);
+        transform: rotate(180deg);
+        
+    }
+}
+
+@keyframes swipfrenchmark
+{
+    0%{
+        transform:scaleX(0);
+    }
+
+    50%{
+        transform:scaleX(.5);
+    }
+
+    100%{
+        transform: scaleX(1);
     }
 }
 
 body
-{ 
+{
     display:flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     font-family: "Roboto", sans-serif;
     box-sizing: border-box;
     margin: 0;
@@ -80,7 +105,7 @@ header
     align-items: center; */
     width: 100%;
     font-size: 1em;
-        
+
 }
 
 .header__logo
@@ -95,37 +120,64 @@ header
 .header__logo img
 {
     height: 35px;
-    
+
 }
-.header__logo i
+.header__logo--btn
 {
     position: absolute;
     left: 5%;
-    font-size: x-large;
+    
+}
+
+
+
+
+.header__logo--btn button
+{
+
+    font-size: xx-large;
+    border: none;
+    border-radius: 80%;
+    padding: 10px 15px;
+    background-color: #ffffff;
+
+}
+
+.header__logo--btn button:hover{
+    background-color: #ffffff;
+    color: #858383fa;
+    transition-delay: 10ms;
+    transition-duration: 1s;
+    cursor: pointer;
+    animation-name: swipRight;
+    animation-delay: 50ms;
+    animation-duration: 750ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode:backwards ;
 }
 
 .header__logo a
 {
     text-decoration: none;
     color: #353535;
-  
+
 }
 
 
 .header__french-img-div
 {
-   
+
     background-image: url(./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
     background-size: cover;
     height: 300px;
     display: flex;
     align-items: flex-end;
-  
+
 }
 
 .header__first-title-div--icon
 {
-  
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -143,7 +195,7 @@ h1{
 }
 
 
- 
+
 .header__first-title-div--icon i
 {
     font-size: 30px;
@@ -155,25 +207,25 @@ h1{
 }
 .fa-heart:hover
 {
-    color: #c667db 
-    
+    color: #c667db
+
 }
 
 
 
 main
 {
-   
+
     margin:  0px 5px;
     width: 100%;
     background-color:#f6f6f6;
-   
+
 }
 
 .french-card-contain
 {
     margin: 10px 20px 0px 20px;
-    
+
 
 }
 
@@ -185,7 +237,7 @@ main
 .french-card-contain__subtitle span
 {
     border-bottom: 3px solid #99e2d0;
-    padding-bottom: 5px;  
+    padding-bottom: 5px;
     display: inline-block;
 }
 
@@ -193,61 +245,100 @@ main
 {
     border-radius: 15px;
     margin-block: 15px;
-    padding: 5px 10px;
     background-color: #FFFFFF;
     height: 60px ;
     box-shadow: 0 2px 4px 0 #d7d7d7;
-       
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    cursor: pointer;
+    
+
 }
 
-h3, .french-meal p
-{
-    margin: 5px 0;
+.french-meal__title{
+    width: 80%;
+    padding: 0 10px;
+    
+    
 }
-
-.french-meal p span
+.french-meal h3, .french-meal p
 {
-    font-weight: bold;
-}
+    font-size: 1em;
+    margin:  0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} 
 
-.french-meal:hover
+.animation1:hover .french-meal__title
 {
-    animation: swipRight 1s;
-}
-
-.french-meal__animation--swip 
-{
-    background-color: #99e2d0;
-    height: 50px;  
+    width: 50%;
     
 }
 
+.french-meal__price
+{
+    width: 20%;
+    text-align: end;
+    padding: 15px 0 0 0;
+    font-weight: bold;
+    
+}
+.animation1:hover .french-meal__price
+{
+    width: 25%;
+}
+
+.french-meal__animation--swip
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99e2d0;
+    width: 0%;
+}
 
 .french-meal__animation--swip i
 {
- animation: rotate 1s linear;
- animation-direction: reverse;
- color: white;
- font-size: 50px;
-
- 
+  color: transparent
 }
-.animation1
+
+.animation1:hover .french-meal__animation--swip 
 {
-    animation: card_moovUp linear 1.2s both;
-    animation-delay: 5ms;
-    
-    
+    /* animation-name: swipfrenchmark ;
+    animation-duration: 750ms;
+    animation-fill-mode: both;
+    animation-timing-function: linear ;
+    animation-iteration-count: 1; */
+    width: 25%;
+    height:100%;
+    border-radius: 0 15px 15px 0;
+    transition: all 2s;
 }
 
-.animation2{
+.animation1:hover .french-meal__animation--swip i{
+    animation: rotate 1s linear;
+    animation-direction: reverse;
+    color: white;
+    font-size: 25px;
+}
+
+.animation1{
     animation: card_moovUp linear 1.5s both;
     animation-delay: 5ms;
 }
 
+.animation2{
+    animation: card_moovUp linear 1.75s both;
+    animation-delay: 6ms;
+}
+
 .animation3{
     animation: card_moovUp linear 2s both;
-    animation-delay: 5ms;
+    animation-delay: 7ms;
 }
 
 
@@ -261,8 +352,14 @@ h3, .french-meal p
     margin: 10% 25%;
     color: white;
     background: linear-gradient( 170deg,  #FF79DA 4% , #9356DC );
-   
+    box-shadow: 0 4px 7px 2px #c6c6c6;
 
+
+}
+.order__btn:hover
+{
+    background: linear-gradient(170deg,  #e987cc 4% , #a876e6);
+    box-shadow: 0 4px 8px 0 rgb(156, 155, 155);
 }
 
 footer{
@@ -276,11 +373,11 @@ footer{
     color: #FFFFFF;
     padding: 20px;
     padding-bottom: 20px;
-    
-   
+
+
 }
 
-#footer i 
+#footer i
 {
     padding-inline: 10px;
 }
@@ -293,5 +390,5 @@ footer{
 
 .span_footer
 {
-    font-family: "shrikhand"; 
+    font-family: "shrikhand";
 }

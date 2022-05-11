@@ -66,6 +66,8 @@ body
     height: 35px;
 }
 
+
+
 .header-nav__search-bar
 {   
     height: 45px;
@@ -138,10 +140,17 @@ h1
     border: none;
     border-radius: 30px;
     background: linear-gradient(170deg,  #FF79DA 4% , #9356DC ); 
+    box-shadow: 0 4px 7px 2px #c6c6c6;
     color: white;
     font-size: large;
         
 }
+.first-title-card__btn:hover button
+{
+   background: linear-gradient(170deg,  #e987cc 4% , #a876e6);
+   box-shadow: 0 4px 8px 0 rgb(156, 155, 155);
+}
+
 /*  MAIN   */
 #fct_section
 {
@@ -301,17 +310,22 @@ h3
     color: black;
 }
 
-.fa-heart
+.icon .fa-heart
 {
-    color: #d3d3d052;
+  color: #fff;
+    text-shadow: 0 0 2px #000000;  
+    transition: all 0.5s;
 }
-.fa-heart:hover
+
+.icon .fa-heart:hover
 {
-    color: #c667db 
+    background: linear-gradient(170deg,  #FF79DA 5% , #9356DC);
+   -webkit-background-clip: text;
+   color: transparent;
+   text-shadow: none;
+   transition: all 1.5s;
+}
     
-}
-
-
  
 #footer
 {
@@ -338,6 +352,7 @@ h3
 {
     font-family: "shrikhand";
 }
+
 
 
 /* MEDIA QUERIES */
