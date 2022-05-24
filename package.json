@@ -1,0 +1,22 @@
+{
+  "name": "bill_elodie_1_code_032022",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prefix_style": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/",
+    "prefix_menu": "postcss ./css/menu.css --use autoprefixer -d ./css/prefixed/",
+    "prefix_menu2": "postcss ./css/menu.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "browserslist": "last 4 versions",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elodie-BILL/Openclassroomsprojets2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Elodie-BILL/Openclassroomsprojets2/issues"
+  },
+  "homepage": "https://github.com/Elodie-BILL/Openclassroomsprojets2#readme"
+}
