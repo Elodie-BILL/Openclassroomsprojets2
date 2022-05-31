@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prefix_style": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/",
-    "prefix_menu": "postcss ./css/menu.css --use autoprefixer -d ./css/prefixed/",
-    "prefix_menu2": "postcss ./css/menu2.css --use autoprefixer -d ./css/prefixed/"
+    "prefix_menu": "postcss ./css/menu.css --use autoprefixer -d ./css/prefixed/"
   },
   "browserslist": "last 4 versions",
   "repository": {

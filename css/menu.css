@@ -150,15 +150,28 @@ header {
 }
 
 
+
 .header__img-div {
 
-    background-image: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-    background-size: cover;
-    height: 300px;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+
 
 }
+
+#header__img-div {
+    width: 100%;
+    height: auto;
+
+}
+
+#header__img-div img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+
 
 .header__first-title-div--icon {
 
@@ -490,9 +503,9 @@ footer {
         width: auto;
     }
 
-    .header__img-div {
+    /* .header__img-div {
         height: 850px;
-    }
+    } */
 
     .header__first-title-div--icon {
         justify-content: center;
