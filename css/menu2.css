@@ -1,22 +1,22 @@
 @font-face {
     font-family: "Roboto";
-    src: url(/Police/roboto_thin_macroman/Roboto-Thin-webfont.woff);
+    src: url(../Police/roboto_thin_macroman/Roboto-Thin-webfont.woff);
 
 }
 
 @font-face {
     font-family: "robotomedium";
-    src: url(/Police/roboto_medium_macroman/Roboto-Medium-webfont.woff);
+    src: url(../Police/roboto_medium_macroman/Roboto-Medium-webfont.woff);
 }
 
 @font-face {
     font-family: "robotobold";
-    src: url(/Police/roboto_bold_macroman/Roboto-Bold-webfont.woff);
+    src: url(../Police/roboto_bold_macroman/Roboto-Bold-webfont.woff);
 }
 
 @font-face {
     font-family: "shrikhand";
-    src: url(/Police/shrikhand/Shrikhand-Regular.otf);
+    src: url(../Police/shrikhand/Shrikhand-Regular.otf);
 }
 
 @keyframes card_moovUp {
