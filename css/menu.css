@@ -180,15 +180,16 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 80px;
     width: 100%;
     font-family: "shrikhand";
     background-color: #f6f6f6;
     border-radius: 40px 40px 0 0;
-    padding-inline: 25px;
+    /* padding-inline: 25px; */
     position: absolute;
-    bottom: -15px;
+    bottom: -8px;
+
 }
 
 h1 {
@@ -212,6 +213,7 @@ h1 {
 .header__first-title-div--icon .fa-heart:hover {
     background: linear-gradient(170deg, #FF79DA 5%, #9356DC);
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     text-shadow: none;
     transition: all 1.5s;
@@ -470,7 +472,7 @@ footer {
     }
 
     .header__first-title-div--icon {
-        width: 100%;
+
         /* margin: 0 10%; */
         justify-content: space-evenly;
     }
@@ -514,9 +516,11 @@ footer {
 
     .header__first-title-div--icon {
         justify-content: center;
-        width: 100%;
+        /* width: 100%; */
         margin: 0;
         height: 120px;
+        border-radius: 80px 80px 0 0;
+        bottom: -15px;
 
     }
 
