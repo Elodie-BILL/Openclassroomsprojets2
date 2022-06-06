@@ -1,22 +1,22 @@
 @font-face {
     font-family: "Roboto";
-    src: url(./css/Police/roboto_thin_macroman/Roboto-Thin-webfont.woff);
+    src: url(./Police/roboto_thin_macroman/Roboto-Thin-webfont.woff);
 
 }
 
 @font-face {
     font-family: "robotomedium";
-    src: url(./css/Police/roboto_medium_macroman/Roboto-Medium-webfont.woff);
+    src: url(./Police/roboto_medium_macroman/Roboto-Medium-webfont.woff);
 }
 
 @font-face {
     font-family: "robotobold";
-    src: url(./css/Police/roboto_bold_macroman/Roboto-Bold-webfont.woff);
+    src: url(./Police/roboto_bold_macroman/Roboto-Bold-webfont.woff);
 }
 
 @font-face {
     font-family: "shrikhand";
-    src: url(./css/Police/shrikhand/Shrikhand-Regular.otf);
+    src: url(./Police/shrikhand/Shrikhand-Regular.otf);
 }
 
 @keyframes card_moovUp {
@@ -162,6 +162,7 @@ header {
 #header__img-div {
     width: 100%;
     height: auto;
+    position: relative;
 
 }
 
@@ -185,10 +186,13 @@ header {
     background-color: #f6f6f6;
     border-radius: 40px 40px 0 0;
     padding-inline: 25px;
+    position: absolute;
+    bottom: 0;
 }
 
 h1 {
     font-size: 25px;
+    font-family: "shrikhand", sans-serif;
 }
 
 
@@ -206,7 +210,7 @@ h1 {
 
 .header__first-title-div--icon .fa-heart:hover {
     background: linear-gradient(170deg, #FF79DA 5%, #9356DC);
-    -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
     text-shadow: none;
     transition: all 1.5s;
