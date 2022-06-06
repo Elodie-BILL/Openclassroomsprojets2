@@ -471,7 +471,7 @@ h3 {
 
     .fct-section--card {
 
-        width: 40%;
+        width: 60%;
     }
 
     .restaurant-section h2 {
@@ -561,11 +561,17 @@ h3 {
         height: 400px;
         justify-content: space-evenly;
 
+
+    }
+
+    .fct-section__div-card {
+        width: 100%;
+        flex-direction: unset;
     }
 
     .fct-section--card {
         font-size: 22px;
-        margin: 10px 0;
+        margin: 10px 20px;
     }
 
     h2 {
