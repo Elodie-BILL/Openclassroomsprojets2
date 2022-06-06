@@ -171,6 +171,7 @@ header {
     height: auto;
     object-fit: cover;
 
+
 }
 
 
@@ -187,7 +188,7 @@ header {
     border-radius: 40px 40px 0 0;
     padding-inline: 25px;
     position: absolute;
-    bottom: 0;
+    bottom: -15px;
 }
 
 h1 {
